@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a New Event</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div id="outer">
+        <form onsubmit="send()">
+            <p>Event Type:
+                <select id="sections">
+                    <option value="0" id="chooseone" disabled>Choose one</option>
+                    <option value="A" id="chooseone" selected>A</option>
+                    <option value="B" id="chooseone">B</option>
+                    <option value="C" id="chooseone">C</option>
+                </select>
+            </p>
+
+            <p>Event Title:
+                <input id="margin1" type="text" required>
+            </p>
+
+            <p>Event Dates:
+                <input id="margin2" type="date" required> to <input id="margin3"type="date" required>
+            </p>
+
+            <p>Posting Date:
+                <input id="margin4" type="date" required>
+            </p>
+
+            <p><input type="checkbox">
+                Is Registration Required?
+            </p>
+
+            <p><input type="checkbox">
+                Is this event associated with any Family Programs?
+            </p>
+
+            <p><input type="checkbox">
+                Upon Registration Completion, Are Users to Receive an Auto Generated Email?
+            </p>
+
+            <p><input type="checkbox">
+                Is There a Point of Contact?
+            </p>
+
+            <p><input type="checkbox">
+                Is There a Hosting Command Point of Contact?
+            </p>
+
+            <br>
+
+            <p align="center">
+            <button id="button" type="submit">Save</button>
+            <button id="button" type="reset">Cancel</button>
+            </p>
+        </form>
+    </div>
+</body>
+</html>
